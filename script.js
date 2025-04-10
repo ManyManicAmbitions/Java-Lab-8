@@ -10,12 +10,26 @@ function student(name, age, enrolled, courses){
             console.log(`Name: ${this.name}, Age: ${this.age}, Enrolled: ${this.enrolled}, Courses: ${this.courses} `);
             
         };
+
+    this.addCourse = function(newCourse){
+        this.courses.push(newCourse);
+            console.log(`${newCourse} Course added successfully.`);
+            
+    };
+
+    this.getTotalCourses = function(){
+        return this.courses.length;
+    };
 }
 
     const student1 = new student("Tyrel", 24, true, ["CPAN-111-RNA", "CPAN-133-RNA", "CPAN-116-RNA", "WRIT-120-DWB", "CPAN-113-RNA", "CPAN-134-RNA"]);
         console.log(student1.name, student1.age);
 
         student1.displayInfo();
+
+    student1.addCourse("ARTS-117-RNA");
+        console.log(`Total Courses: ${student1.getTotalCourses()}`);
+        
         
 
     // let jsonString = JSON.stringify(student1);
