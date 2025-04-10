@@ -26,15 +26,15 @@ function student(name, age, enrolled, courses){
     //     console.log(student1 === newStudent);
         
         
-const {name, courses} = student1;
-    console.log("Name:", name);
-    console.log("Courses:", courses);
+// const {name, courses} = student1;
+//     console.log("Name:", name);
+//     console.log("Courses:", courses);
 
-const scores = [100, 95, 88, 64];
+// const scores = [100, 95, 88, 64];
 
-const [score1, score2] = scores;
-console.log("Score 1:", score1);
-console.log("Score 2:", score2);
+// const [score1, score2] = scores;
+// console.log("Score 1:", score1);
+// console.log("Score 2:", score2);
 
     
     
