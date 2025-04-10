@@ -37,4 +37,12 @@ function student(name, age, enrolled, courses){
 // console.log("Score 2:", score2);
 
     
+let clonedStudent = {...student1};
+clonedStudent.graduationYear = 2026;
+    console.log(clonedStudent);
+
+let newCourses = ["BIO-200-RNA", "ARTS-117-RNA"];
+let combinedCoursesArray = [...student1.courses, ...newCourses];
+console.log(combinedCoursesArray);
+
     
