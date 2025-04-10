@@ -1,3 +1,5 @@
+const { json } = require("express");
+
 function student(name, age, enrolled, courses){
     this.name = name;
     this.age = age;
@@ -14,4 +16,14 @@ function student(name, age, enrolled, courses){
         console.log(student1.name, student1.age);
 
         student1.displayInfo();
+        
+
+    let jsonString = JSON.stringify(student1);
+        console.log(jsonString);
+
+    let newStudent = JSON.parse(jsonString);
+        console.log(newStudent);
+        console.log(student1 === newStudent);
+        
+        
         
